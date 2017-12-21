@@ -26,7 +26,7 @@ class Curl implements CurlInterface
             curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
         }
 
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        //curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
 
         $content = curl_exec($ch);
